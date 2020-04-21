@@ -33,11 +33,20 @@ that are important to Angular developers, including details about the following 
 
 {@a tsconfig}
 
-## TypeScript configuration
+<!-- 
+## TypeScript configuration 
+-->
+## TypeScript 설정
 
+<!-- 
 A TypeScript configuration file called `tsconfig.json` guides the compiler as it generates JavaScript files for a project.
 This file contains options and flags that are essential for Angular applications.
-Typically, the file is found at the [root level of the workspace](guide/file-structure).
+Typically, the file is found at the [root level of the workspace](guide/file-structure). 
+-->
+
+`tsconfig.json` 는 TypeScript 설정 파일로, 컴파일러가 프로젝트에 대한 JavaScript 파일을 생성할 때 도움을 줍니다.
+설정 파일에는 Angular 애플리케이션에 필수적인 옵션과 플래그들이 들어있습니다.
+보통, 이 파일은 [워크스페이스 최상위 폴더](guide/file-structure)에서 찾을 수 있습니다.
 
 <div class="alert is-helpful">
 
@@ -49,7 +58,10 @@ For details about `tsconfig.json`, see the official
 
 </div>
 
-The initial `tsconfig.json` for an Angular app typically looks like the following example.
+<!-- 
+The initial `tsconfig.json` for an Angular app typically looks like the following example. 
+-->
+일반적인 Angular 애플리케이션의 초기 `tsconfig.json` 파일은 다음과 같습니다.
 
 <code-example lang="json" header="tsconfig.json" linenums="false">
 {
@@ -133,7 +145,10 @@ You can suppress them with the following additional flag:
 
 <div class="alert is-helpful">
 
-For more information about how the TypeScript configuration affects compilation, see [Angular Compiler Options](guide/angular-compiler-options) and [Template Type Checking](guide/template-typecheck).
+<!-- 
+For more information about how the TypeScript configuration affects compilation, see [Angular Compiler Options](guide/angular-compiler-options) and [Template Type Checking](guide/template-typecheck). 
+-->
+TypeScript 설정이 컴파일에 미치는 영향에 대한 자세한 설명은, [Angular 컴파일러 옵션](guide/angular-compiler-options)과 [템플릿 타입 체크](guide/template-typecheck)를 참조하세요.
 
 </div>
 
@@ -227,4 +242,7 @@ For instance, to install typings for `jasmine` you run `npm install @types/jasmi
 
 ### *target*
 
-By default, the target is `es2015`, which is supported only in modern browsers. You can configure the target to `es5` to specifically support legacy browsers. [Differential loading](guide/deployment#differential-loading) is also provided by the Angular CLI to support modern, and legacy browsers with separate bundles.
+<!-- 
+By default, the target is `es2015`, which is supported only in modern browsers. You can configure the target to `es5` to specifically support legacy browsers. [Differential loading](guide/deployment#differential-loading) is also provided by the Angular CLI to support modern, and legacy browsers with separate bundles. 
+-->
+일반적으로, `--target` 옵션의 기본값은 최신 브라우저에서만 지원되는 `es2015`입니다. `--target` 옵션을 `es5`로 설정하여 특정 레거시 브라우저를 지원할 수 있습니다. 또한, 최신 브라우저와 레거시 브라우저 모두를 별도의 번들로 지원할 수 있도록 Angular CLI에서는 [선택적 로딩](guide/deployment#differential-loading)을 제공하고 있습니다.
